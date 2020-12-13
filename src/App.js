@@ -1,6 +1,7 @@
 import React from 'react';
 import About from './about';
 import Contact from './contact';
+import {Counter} from './features/counter/Counter';
 
 const App = () => {
 	return (
@@ -8,6 +9,7 @@ const App = () => {
 			<h1>hello world!!!</h1>
 			<About />
 			<Contact />
+			<Counter />
 		</div>
 	);
 };
