@@ -5,6 +5,7 @@ import {Counter} from './features/counter/Counter';
 import Login from './features/login/Login';
 import {selectUser} from './features/login/userSlice';
 import {useSelector} from 'react-redux';
+import Header from './components/Header';
 
 const App = () => {
 	const user = useSelector(selectUser);
@@ -13,6 +14,7 @@ const App = () => {
 		<div>
 			{user === 'sam' ? (
 				<div>
+					<Header />
 					<h1>hello world!!!</h1>
 					<About />
 					<Contact />
